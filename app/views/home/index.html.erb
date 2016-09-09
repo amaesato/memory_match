@@ -1,0 +1,25 @@
+<div class="row hidden">
+  <div class="col s12 m6">
+    <h1 class="menu toggleMenu">Meh-More-Me</h1>
+  </div>
+
+  <div class="col s12 m6">
+    <h1 class="reset menu right-align">reset</h1>
+  </div>
+</div>
+
+<div class="row gameIntro">
+  <div class="col s12">
+    <h1>Welcome To Meh...<br />More Me</h1>
+    <button class='btn toggleMenu' id='buttonHide'>Get Rockin</button>
+  </div>
+</div>
+
+<div class="row game hidden">
+  <% @numbers.each do |num| %>
+    <div class="col s3 card black-bg center" data-value=<%=num%> >
+      <h1 class="center-align hidden"><%= num %></h1>
+    </div>
+  <% end %>
+  <h3 class="alertText"></h3>
+</div>
